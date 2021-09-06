@@ -1,7 +1,27 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM  from 'react-dom';
 
-const Amir = ()=>{
-return React.createElement('h1',{}, 'hello');
+ReactDOM.render(
+    <Student name="Amir" roll ="2181069"/>),
+    document.getElementById(('root')
+    ); 
+//Nested Component, React Tools
+function BookList (){
+return <section>
+<Book/>
+<Book/>
+<Auther />
+<Auther />
+</section>;
 };
-ReactDOM.render(<Amir/> ,document.getElementById('root'));
+const Book = () => {
+    return<article><Image></Image></article>;
+};
+const Image = () => (<img src ='https://images-na.ssl-images-amazon.com/images/I/51MB5SD5GIL._AC_UL200_SR200,200_.jpg' alt =''
+ />
+);
+const Auther = () =><h2>that my name</h2>
+ 
+
+ReactDOM.render(<BookList/> ,document.getElementById('root'));
+     
